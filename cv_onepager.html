@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar Valverde - One Pager Ejecutivo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        @page {
+            size: A4;
+            margin: 12mm;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 9pt;
+            line-height: 1.35;
+            color: #1a1a2e;
+            background: white;
+        }
+
+        .page {
+            width: 210mm;
+            height: 297mm;
+            padding: 12mm;
+            background: white;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Hero Header */
+        .hero {
+            background: linear-gradient(135deg, #1a365d 0%, #2563eb 100%);
+            color: white;
+            padding: 20px 25px;
+            border-radius: 10px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .photo {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            flex-shrink: 0;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-info h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20pt;
+            font-weight: 900;
+            margin-bottom: 3px;
+        }
+
+        .hero-info h2 {
+            font-size: 10pt;
+            font-weight: 400;
+            opacity: 0.9;
+            margin-bottom: 8px;
+        }
+
+        .contact-row {
+            display: flex;
+            gap: 15px;
+            font-size: 8pt;
+        }
+
+        .contact-row span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .stat {
+            background: #f1f5f9;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 3px solid #2563eb;
+        }
+
+        .stat .number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18pt;
+            font-weight: 700;
+            color: #1a365d;
+        }
+
+        .stat .label {
+            font-size: 7pt;
+            color: #64748b;
+            text-transform: uppercase;
+        }
+
+        /* Main Grid */
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 160px;
+            gap: 15px;
+            flex: 1;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 9pt;
+            color: #1a365d;
+            font-weight: 700;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 3px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        /* Profile */
+        .profile {
+            font-size: 9pt;
+            line-height: 1.5;
+            background: #f8fafc;
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        .profile strong {
+            color: #1a365d;
+        }
+
+        /* Experience Compact */
+        .exp-item {
+            margin-bottom: 10px;
+            padding-left: 10px;
+            border-left: 2px solid #e2e8f0;
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2px;
+        }
+
+        .exp-title {
+            font-weight: 700;
+            color: #1a365d;
+            font-size: 9pt;
+        }
+
+        .exp-date {
+            font-size: 7.5pt;
+            color: #64748b;
+        }
+
+        .exp-company {
+            color: #2563eb;
+            font-size: 8.5pt;
+            font-weight: 600;
+        }
+
+        .exp-highlight {
+            font-size: 8pt;
+            color: #475569;
+            margin-top: 3px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            font-size: 8pt;
+        }
+
+        .sidebar .section-title {
+            font-size: 8pt;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: #e2e8f0;
+            padding: 3px 8px;
+            border-radius: 20px;
+            margin: 2px;
+            font-size: 7.5pt;
+            color: #334155;
+        }
+
+        .cert-mini {
+            padding: 5px 0;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 7.5pt;
+        }
+
+        .cert-mini strong {
+            color: #1a365d;
+            display: block;
+        }
+
+        .cert-mini span {
+            color: #64748b;
+        }
+
+        .edu-mini h4 {
+            font-size: 8pt;
+            color: #1a365d;
+        }
+
+        .edu-mini .school {
+            font-size: 7.5pt;
+            color: #2563eb;
+        }
+
+        .edu-mini .year {
+            font-size: 7pt;
+            color: #64748b;
+        }
+
+        /* Value Box */
+        .value-box {
+            background: linear-gradient(135deg, #1a365d 0%, #2563eb 100%);
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: auto;
+        }
+
+        .value-box h4 {
+            font-size: 8pt;
+            margin-bottom: 6px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .value-list {
+            list-style: none;
+            font-size: 7.5pt;
+        }
+
+        .value-list li {
+            padding: 2px 0;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .value-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #60a5fa;
+        }
+
+        /* Languages */
+        .lang-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 7.5pt;
+            padding: 3px 0;
+        }
+
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+
+            .page {
+                margin: 0;
+                padding: 10mm;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <!-- Hero -->
+        <header class="hero">
+            <div class="photo">
+                <img src="Oscar_Foto.png" alt="Oscar Valverde">
+            </div>
+            <div class="hero-info">
+                <h1>OSCAR VALVERDE</h1>
+                <h2>CTO | Enterprise Architect | Máster en Big Data & IA (UCM 9/10)</h2>
+                <div class="contact-row">
+                    <span><i class="fas fa-map-marker-alt"></i> Lima, Perú | Madrid, España</span>
+                    <span><i class="fas fa-envelope"></i> ovasua@gmail.com</span>
+                    <span><i class="fas fa-phone"></i> +51 947 218 489 | +34 634 351 282</span>
+                    <span><i class="fab fa-linkedin"></i> linkedin.com/in/ovasua</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Stats -->
+        <div class="stats-bar">
+            <div class="stat">
+                <div class="number">25+</div>
+                <div class="label">Años Experiencia</div>
+            </div>
+            <div class="stat">
+                <div class="number">>€5M</div>
+                <div class="label">Presupuesto Liderado</div>
+            </div>
+            <div class="stat">
+                <div class="number">40%</div>
+                <div class="label">Reducción Tiempos</div>
+            </div>
+            <div class="stat">
+                <div class="number">99.9%</div>
+                <div class="label">Precisión Datos</div>
+            </div>
+        </div>
+
+        <!-- Main Grid -->
+        <div class="main-grid">
+            <div class="main-content">
+                <!-- Profile -->
+                <section class="section">
+                    <div class="profile">
+                        <strong>Enterprise Architect</strong> (+25 años) especializado en transformación digital, diseño
+                        de ERPs y gestión de proyectos internacionales (BID). <strong>Máster UCM</strong> en Big
+                        Data/IA. Combino visión estratégica con expertise técnico para generar valor cuantificable.
+                    </div>
+                </section>
+
+                <!-- Experience -->
+                <section class="section">
+                    <h3 class="section-title">Experiencia Clave</h3>
+
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <span class="exp-title">Consultor Senior - Arquitectura Empresarial</span>
+                            <span class="exp-date">2021-2025</span>
+                        </div>
+                        <div class="exp-company">Contraloría General de la República (BID)</div>
+                        <div class="exp-highlight">Arquitecto del Sistema SISCO (€5M+). Mejora eficiencia 30%.
+                            Stakeholders internacionales.</div>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <span class="exp-title">Consultor ERP/WMS Independiente</span>
+                            <span class="exp-date">2013-Actual</span>
+                        </div>
+                        <div class="exp-company">Clientes: AS Software España, Kaparoma, Círculo Militar</div>
+                        <div class="exp-highlight">Soluciones enterprise para sectores textil, retail, manufactura y
+                            gobierno.</div>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <span class="exp-title">Director de Proyectos</span>
+                            <span class="exp-date">2018-2021</span>
+                        </div>
+                        <div class="exp-company">Garment Trading S.A.C.</div>
+                        <div class="exp-highlight">Transformación digital, trazabilidad y sistemas de control de
+                            producción.</div>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <span class="exp-title">Enterprise Architect & Director de Sistemas</span>
+                            <span class="exp-date">2002-2018 (16 años)</span>
+                        </div>
+                        <div class="exp-company">Corporación Textil Servitejo S.A.</div>
+                        <div class="exp-highlight">Creación de ERP completo desde cero. 100% automatización. Reducción
+                            40% tiempos. Equipo de 8.</div>
+                    </div>
+                </section>
+
+                <!-- Value Proposition -->
+                <div class="value-box">
+                    <h4>Ideal para organizaciones que necesitan:</h4>
+                    <ul class="value-list">
+                        <li>Construir soluciones enterprise robustas con arquitectura escalable</li>
+                        <li>Modernizar sistemas legacy hacia cloud-native</li>
+                        <li>Liderazgo técnico que traduce estrategia en valor económico</li>
+                        <li>Experiencia en entornos regulados con stakeholders internacionales</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- Skills -->
+                <section class="section">
+                    <h3 class="section-title">Tech Stack</h3>
+                    <div>
+                        <span class="skill-tag">.NET</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Angular</span>
+                        <span class="skill-tag">SQL Server</span>
+                        <span class="skill-tag">Oracle</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Big Data</span>
+                        <span class="skill-tag">Scrum</span>
+                        <span class="skill-tag">PMI</span>
+                        <span class="skill-tag">Jira</span>
+                        <span class="skill-tag">ERP</span>
+                        <span class="skill-tag">WMS</span>
+                    </div>
+                </section>
+
+                <!-- Certifications -->
+                <section class="section">
+                    <h3 class="section-title">Certificaciones</h3>
+                    <div class="cert-mini">
+                        <strong>MS Active Professional</strong>
+                        <span>Top 5% Global</span>
+                    </div>
+                    <div class="cert-mini">
+                        <strong>MS Certified IT Pro</strong>
+                        <span>Windows Server</span>
+                    </div>
+                    <div class="cert-mini">
+                        <strong>Desarrollador 5★ Platino</strong>
+                        <span>C#, LINQ</span>
+                    </div>
+                    <div class="cert-mini">
+                        <strong>PMI / PMBOK 7.0</strong>
+                        <span>+ Agile/Lean</span>
+                    </div>
+                </section>
+
+                <!-- Education -->
+                <section class="section">
+                    <h3 class="section-title">Formación</h3>
+                    <div class="edu-mini">
+                        <h4>Máster Big Data & IA</h4>
+                        <div class="school">UCM España</div>
+                        <div class="year">2024-2025 | 9/10</div>
+                    </div>
+                    <div class="edu-mini" style="margin-top: 8px;">
+                        <h4>Ing. Sistemas</h4>
+                        <div class="school">UNMSM Perú</div>
+                        <div class="year">CIP N° 236923</div>
+                    </div>
+                </section>
+
+                <!-- Languages -->
+                <section class="section">
+                    <h3 class="section-title">Idiomas</h3>
+                    <div class="lang-row"><span>Español</span><span>Nativo</span></div>
+                    <div class="lang-row"><span>Inglés</span><span>A2</span></div>
+                </section>
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>

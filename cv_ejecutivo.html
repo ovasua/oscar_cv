@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar Valverde - CV Ejecutivo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        @page {
+            size: A4;
+            margin: 15mm;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 10pt;
+            line-height: 1.4;
+            color: #333;
+            background: white;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 15mm;
+            background: white;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            gap: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #1a365d;
+            margin-bottom: 15px;
+        }
+
+        .photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .header-info {
+            flex: 1;
+        }
+
+        .header-info h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22pt;
+            color: #1a365d;
+            margin-bottom: 5px;
+        }
+
+        .header-info h2 {
+            font-size: 11pt;
+            color: #2563eb;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 9pt;
+            color: #555;
+        }
+
+        .contact-row span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .contact-row i {
+            color: #2563eb;
+        }
+
+        /* Two Column Layout */
+        .main-layout {
+            display: grid;
+            grid-template-columns: 1fr 180px;
+            gap: 20px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 11pt;
+            color: #1a365d;
+            font-weight: 700;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 4px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Profile */
+        .profile-text {
+            font-size: 9.5pt;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .profile-text strong {
+            color: #1a365d;
+        }
+
+        /* Experience */
+        .job {
+            margin-bottom: 12px;
+            page-break-inside: avoid;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 4px;
+        }
+
+        .job-title {
+            font-weight: 700;
+            color: #1a365d;
+            font-size: 10pt;
+        }
+
+        .job-company {
+            color: #2563eb;
+            font-weight: 600;
+            font-size: 9.5pt;
+        }
+
+        .job-date {
+            font-size: 8.5pt;
+            color: #666;
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        .job-achievements {
+            list-style: none;
+            padding-left: 12px;
+            font-size: 9pt;
+        }
+
+        .job-achievements li {
+            position: relative;
+            padding-left: 10px;
+            margin-bottom: 3px;
+        }
+
+        .job-achievements li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #2563eb;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+        }
+
+        .sidebar .section-title {
+            font-size: 9pt;
+            border-bottom: 1px solid #cbd5e1;
+        }
+
+        .skill-group {
+            margin-bottom: 10px;
+        }
+
+        .skill-group h4 {
+            font-size: 8.5pt;
+            color: #475569;
+            margin-bottom: 4px;
+            font-weight: 600;
+        }
+
+        .skill-list {
+            list-style: none;
+            font-size: 8.5pt;
+            color: #334155;
+        }
+
+        .skill-list li {
+            padding: 2px 0;
+        }
+
+        .cert-item {
+            background: white;
+            padding: 6px 8px;
+            margin-bottom: 6px;
+            border-left: 2px solid #2563eb;
+            font-size: 8pt;
+        }
+
+        .cert-item strong {
+            display: block;
+            color: #1a365d;
+        }
+
+        .cert-item span {
+            color: #64748b;
+            font-size: 7.5pt;
+        }
+
+        /* Education */
+        .edu-item {
+            margin-bottom: 8px;
+        }
+
+        .edu-item h4 {
+            font-weight: 700;
+            color: #1a365d;
+            font-size: 9.5pt;
+        }
+
+        .edu-item .institution {
+            color: #2563eb;
+            font-size: 9pt;
+        }
+
+        .edu-item .period {
+            color: #666;
+            font-size: 8.5pt;
+        }
+
+        /* Stats Row */
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .stat-box {
+            background: #1a365d;
+            color: white;
+            padding: 10px;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .stat-box .number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16pt;
+            font-weight: 700;
+            color: #60a5fa;
+        }
+
+        .stat-box .label {
+            font-size: 7pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Page 2 */
+        .page-break {
+            page-break-before: always;
+        }
+
+        /* Languages */
+        .lang-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 8.5pt;
+            padding: 3px 0;
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+
+            .page {
+                margin: 0;
+                padding: 10mm;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- PAGE 1 -->
+    <div class="page">
+        <!-- Header -->
+        <header class="header">
+            <div class="photo">
+                <img src="Oscar_Foto.png" alt="Oscar Valverde">
+            </div>
+            <div class="header-info">
+                <h1>OSCAR ALFREDO VALVERDE SUÁREZ</h1>
+                <h2>CTO | Enterprise Architect | Máster en Big Data & IA</h2>
+                <div class="contact-row">
+                    <span><i class="fas fa-map-marker-alt"></i> Lima, Perú | Madrid, España</span>
+                    <span><i class="fas fa-envelope"></i> ovasua@gmail.com</span>
+                    <span><i class="fas fa-phone"></i> +51 947 218 489 | +34 634 351 282</span>
+                    <span><i class="fab fa-linkedin"></i> linkedin.com/in/ovasua</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Stats Row -->
+        <div class="stats-row">
+            <div class="stat-box">
+                <div class="number">25+</div>
+                <div class="label">Años Experiencia</div>
+            </div>
+            <div class="stat-box">
+                <div class="number">>€5M</div>
+                <div class="label">Presupuesto BID</div>
+            </div>
+            <div class="stat-box">
+                <div class="number">40%</div>
+                <div class="label">Reducción Tiempos</div>
+            </div>
+            <div class="stat-box">
+                <div class="number">99.9%</div>
+                <div class="label">Precisión Datos</div>
+            </div>
+        </div>
+
+        <!-- Two Column Layout -->
+        <div class="main-layout">
+            <!-- Main Content -->
+            <div class="main-content">
+                <!-- Profile -->
+                <section class="section">
+                    <h3 class="section-title"><i class="fas fa-user"></i> Perfil Ejecutivo</h3>
+                    <p class="profile-text">
+                        <strong>Enterprise Architect</strong> con +25 años de experiencia liderando transformaciones
+                        digitales en sectores público y privado. Especializado en diseño e implementación de
+                        <strong>arquitecturas empresariales (ERP/CRM)</strong>, gestión de proyectos con financiamiento
+                        internacional (BID) y equipos multidisciplinarios. <strong>Máster en Big Data, Data Science e
+                            IA</strong> por la Universidad Complutense de Madrid (9/10). Combino visión estratégica con
+                        expertise técnico para generar valor de negocio cuantificable.
+                    </p>
+                </section>
+
+                <!-- Experience -->
+                <section class="section">
+                    <h3 class="section-title"><i class="fas fa-briefcase"></i> Experiencia Profesional</h3>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">Consultor Senior de Arquitectura Empresarial</div>
+                                <div class="job-company">CONTRALORÍA GENERAL DE LA REPÚBLICA (Proyectos BID)</div>
+                            </div>
+                            <div class="job-date">Dic 2021 - Jul 2025<br>Lima, Perú (Remoto)</div>
+                        </div>
+                        <ul class="job-achievements">
+                            <li>Arquitecto Principal del Sistema SISCO, proyecto estratégico con <strong>presupuesto
+                                    >€5M</strong></li>
+                            <li>Mejora de eficiencia operativa del <strong>30%</strong> en control gubernamental</li>
+                            <li>Gestión stakeholders internacionales: BID, Ministerio de Economía, Alta Dirección</li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">Consultor Independiente - Soluciones ERP/WMS</div>
+                                <div class="job-company">CONSULTORÍA EMPRESARIAL</div>
+                            </div>
+                            <div class="job-date">Nov 2013 - Actualidad<br>Lima/Madrid (Híbrido)</div>
+                        </div>
+                        <ul class="job-achievements">
+                            <li>Implementación ERP/WMS para sectores textil, manufactura, retail y gobierno</li>
+                            <li>Clientes: <strong>AS Software (España)</strong>, Kaparoma, Kusa Cotton, Círculo Militar
+                            </li>
+                            <li>Automatización de procesos críticos: costos, inventarios, facturación electrónica</li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">Director de Proyectos</div>
+                                <div class="job-company">GARMENT TRADING S.A.C.</div>
+                            </div>
+                            <div class="job-date">Mar 2018 - Nov 2021<br>Lima, Perú</div>
+                        </div>
+                        <ul class="job-achievements">
+                            <li>Liderazgo de proyectos de transformación digital en sector textil-confecciones</li>
+                            <li>Implementación de sistemas de control y trazabilidad en cadena de suministro</li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">Enterprise Architect & Director de Sistemas</div>
+                                <div class="job-company">CORPORACIÓN TEXTIL SERVITEJO S.A.</div>
+                            </div>
+                            <div class="job-date">Feb 2002 - Feb 2018<br>Lima, Perú (16 años)</div>
+                        </div>
+                        <ul class="job-achievements">
+                            <li>Arquitecto Principal: diseño e implementación de <strong>ERP propietario
+                                    completo</strong></li>
+                            <li><strong>Automatización 100%</strong> de procesos críticos (financiero, RRHH,
+                                manufactura)</li>
+                            <li>Reducción <strong>40%</strong> tiempos nómina, precisión inventarios
+                                <strong>99.5%</strong>
+                            </li>
+                            <li>Liderazgo de equipo técnico de 8 profesionales, +20 proyectos entregados</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- Skills -->
+                <section class="section">
+                    <h3 class="section-title">Competencias</h3>
+
+                    <div class="skill-group">
+                        <h4>Metodologías</h4>
+                        <ul class="skill-list">
+                            <li>Scrum / Agile / RUP</li>
+                            <li>PMI / PMBOK 7.0</li>
+                            <li>MS Project / Jira</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
+                        <h4>Desarrollo</h4>
+                        <ul class="skill-list">
+                            <li>.NET / Java / Angular</li>
+                            <li>SQL Server / Oracle</li>
+                            <li>Azure Cloud</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
+                        <h4>IA & Big Data</h4>
+                        <ul class="skill-list">
+                            <li>Machine Learning</li>
+                            <li>Python / Power BI</li>
+                            <li>Análisis Predictivo</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Languages -->
+                <section class="section">
+                    <h3 class="section-title">Idiomas</h3>
+                    <div class="lang-item"><span>Español</span><span>Nativo</span></div>
+                    <div class="lang-item"><span>Inglés</span><span>A2</span></div>
+                </section>
+
+                <!-- Certifications -->
+                <section class="section">
+                    <h3 class="section-title">Certificaciones</h3>
+                    <div class="cert-item">
+                        <strong>Microsoft Active Professional</strong>
+                        <span>Top 5% Global - 2012</span>
+                    </div>
+                    <div class="cert-item">
+                        <strong>MS Certified IT Professional</strong>
+                        <span>Windows Server</span>
+                    </div>
+                    <div class="cert-item">
+                        <strong>Office Specialist Expert</strong>
+                        <span>Excel/Word/PPT 2010</span>
+                    </div>
+                    <div class="cert-item">
+                        <strong>Desarrollador 5★ Platino</strong>
+                        <span>LINQ, C#, VB.NET</span>
+                    </div>
+                    <div class="cert-item">
+                        <strong>PMI Project Mgmt</strong>
+                        <span>PMBOK 7.0 + Agile</span>
+                    </div>
+                </section>
+
+                <!-- Education -->
+                <section class="section">
+                    <h3 class="section-title">Formación</h3>
+                    <div class="edu-item">
+                        <h4>Máster Big Data, Data Science & IA</h4>
+                        <div class="institution">UCM - España</div>
+                        <div class="period">2024-2025 | 9/10</div>
+                    </div>
+                    <div class="edu-item">
+                        <h4>Ing. de Sistemas</h4>
+                        <div class="institution">UNMSM - Perú</div>
+                        <div class="period">1997-2001 | CIP 236923</div>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>

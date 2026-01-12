@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar Valverde - CV Formal (Licitaciones/Gobierno)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Times+New+Roman&family=Arial&display=swap" rel="stylesheet">
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 10pt;
+            line-height: 1.5;
+            color: #000;
+            background: white;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm;
+            background: white;
+            margin: 0 auto;
+        }
+
+        /* Header Formal */
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #000;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 16pt;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .header h2 {
+            font-size: 12pt;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+
+        .contact-formal {
+            font-size: 9pt;
+            color: #333;
+        }
+
+        .contact-formal span {
+            margin: 0 10px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 18px;
+        }
+
+        .section-title {
+            font-size: 11pt;
+            font-weight: bold;
+            background: #f0f0f0;
+            padding: 5px 10px;
+            border-left: 4px solid #333;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+
+        th,
+        td {
+            border: 1px solid #999;
+            padding: 6px 8px;
+            text-align: left;
+            font-size: 9pt;
+        }
+
+        th {
+            background: #e0e0e0;
+            font-weight: bold;
+        }
+
+        /* Data Row */
+        .data-row {
+            display: flex;
+            margin-bottom: 5px;
+        }
+
+        .data-label {
+            font-weight: bold;
+            width: 180px;
+            flex-shrink: 0;
+        }
+
+        .data-value {
+            flex: 1;
+        }
+
+        /* Experience Item */
+        .exp-formal {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        .exp-formal:last-child {
+            border-bottom: none;
+        }
+
+        .exp-header-formal {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        .exp-title-formal {
+            font-weight: bold;
+        }
+
+        .exp-date-formal {
+            font-style: italic;
+            color: #555;
+        }
+
+        .exp-company-formal {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .exp-desc-formal {
+            font-size: 9pt;
+            margin-left: 15px;
+        }
+
+        .exp-desc-formal li {
+            margin-bottom: 3px;
+        }
+
+        /* Certification List */
+        .cert-list {
+            columns: 2;
+            column-gap: 30px;
+        }
+
+        .cert-item-formal {
+            margin-bottom: 8px;
+            break-inside: avoid;
+        }
+
+        .cert-item-formal strong {
+            display: block;
+        }
+
+        .cert-item-formal span {
+            font-size: 8pt;
+            color: #555;
+        }
+
+        /* Page Break */
+        .page-break {
+            page-break-before: always;
+        }
+
+        /* Declaration */
+        .declaration {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #999;
+            font-size: 9pt;
+            text-align: center;
+            font-style: italic;
+        }
+
+        @media print {
+            .page {
+                margin: 0;
+                padding: 15mm;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- PAGE 1 -->
+    <div class="page">
+        <header class="header">
+            <h1>OSCAR ALFREDO VALVERDE SUÁREZ</h1>
+            <h2>Ingeniero de Sistemas | Máster en Big Data, Data Science e Inteligencia Artificial</h2>
+            <div class="contact-formal">
+                <span>📍 Av. Alfredo Palacios No. 694, Callao, Perú</span>
+                <span>📧 ovasua@gmail.com</span>
+                <span>📱 +51 947 218 489 / +34 634 351 282</span>
+            </div>
+        </header>
+
+        <!-- DATOS PERSONALES -->
+        <section class="section">
+            <h3 class="section-title">1. Datos Personales</h3>
+            <div class="data-row"><span class="data-label">Nombres y Apellidos:</span><span class="data-value">Oscar
+                    Alfredo Valverde Suárez</span></div>
+            <div class="data-row"><span class="data-label">Documento de Identidad:</span><span class="data-value">DNI N°
+                    40002484</span></div>
+            <div class="data-row"><span class="data-label">Fecha de Nacimiento:</span><span class="data-value">01 de
+                    octubre de 1978</span></div>
+            <div class="data-row"><span class="data-label">Estado Civil:</span><span class="data-value">Casado</span>
+            </div>
+            <div class="data-row"><span class="data-label">Colegiatura:</span><span class="data-value">CIP N° 236923 -
+                    Consejo Departamental del Callao</span></div>
+        </section>
+
+        <!-- FORMACIÓN ACADÉMICA -->
+        <section class="section">
+            <h3 class="section-title">2. Formación Académica</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Grado/Título</th>
+                        <th>Institución</th>
+                        <th>País</th>
+                        <th>Período</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Máster en Big Data, Data Science e Inteligencia Artificial</strong></td>
+                        <td>Universidad Complutense de Madrid (UCM)</td>
+                        <td>España</td>
+                        <td>Sep 2024 - Dic 2025</td>
+                        <td>Finalizado (9/10)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Título Profesional de Ingeniero de Sistemas</strong></td>
+                        <td>Universidad Nacional Mayor de San Marcos (UNMSM)</td>
+                        <td>Perú</td>
+                        <td>Abr 1997 - Dic 2001</td>
+                        <td>Titulado y Colegiado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- CERTIFICACIONES -->
+        <section class="section">
+            <h3 class="section-title">3. Certificaciones Profesionales</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Certificación</th>
+                        <th>Institución</th>
+                        <th>Año</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Microsoft Active Professional (Top 5% Global)</td>
+                        <td>Microsoft TechNet España</td>
+                        <td>2012</td>
+                    </tr>
+                    <tr>
+                        <td>Microsoft Certified IT Professional - Server Administrator</td>
+                        <td>Microsoft</td>
+                        <td>2010</td>
+                    </tr>
+                    <tr>
+                        <td>Microsoft Office Specialist Expert (Excel, Word, PowerPoint 2010)</td>
+                        <td>Microsoft</td>
+                        <td>2012</td>
+                    </tr>
+                    <tr>
+                        <td>Desarrollador Cinco Estrellas Platino (LINQ, C# 3.0, VB.NET 9.0)</td>
+                        <td>Microsoft MSDN</td>
+                        <td>2005</td>
+                    </tr>
+                    <tr>
+                        <td>Gestión de Proyectos y Certificación PMP PMBOK 7.0 PMI</td>
+                        <td>Udemy</td>
+                        <td>2025</td>
+                    </tr>
+                    <tr>
+                        <td>Gestión de Proyectos con Metodologías Ágiles y Enfoques Lean</td>
+                        <td>Fundación Telefónica / UNMSM</td>
+                        <td>2023</td>
+                    </tr>
+                    <tr>
+                        <td>Gestión de Proyectos con enfoque PMI</td>
+                        <td>UTN Argentina / Cámara Argentina de Comercio</td>
+                        <td>2010</td>
+                    </tr>
+                    <tr>
+                        <td>Angular & Spring Boot: Webapp Full Stack</td>
+                        <td>Udemy</td>
+                        <td>2025</td>
+                    </tr>
+                    <tr>
+                        <td>Administrador de Bases de Datos</td>
+                        <td>Fundación Carlos Slim</td>
+                        <td>2018</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- COMPETENCIAS TÉCNICAS -->
+        <section class="section">
+            <h3 class="section-title">4. Competencias Técnicas</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Área</th>
+                        <th>Tecnologías / Herramientas</th>
+                        <th>Nivel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Metodologías de Gestión</td>
+                        <td>RUP, Scrum, Metodologías Ágiles, PMI/PMBOK</td>
+                        <td>Experto</td>
+                    </tr>
+                    <tr>
+                        <td>Gestión de Proyectos</td>
+                        <td>MS Project, Jira, Azure DevOps</td>
+                        <td>Experto</td>
+                    </tr>
+                    <tr>
+                        <td>Desarrollo de Software</td>
+                        <td>.NET Framework/Core, C#, Java, Angular, Spring Boot</td>
+                        <td>Experto</td>
+                    </tr>
+                    <tr>
+                        <td>Bases de Datos</td>
+                        <td>SQL Server, Oracle, T-SQL, SSIS</td>
+                        <td>Experto</td>
+                    </tr>
+                    <tr>
+                        <td>Arquitectura de Sistemas</td>
+                        <td>Microservicios, APIs REST, Enterprise Architecture</td>
+                        <td>Experto</td>
+                    </tr>
+                    <tr>
+                        <td>Big Data / IA</td>
+                        <td>Python, Machine Learning, Análisis Predictivo, Power BI</td>
+                        <td>Avanzado</td>
+                    </tr>
+                    <tr>
+                        <td>Cloud Computing</td>
+                        <td>Azure Cloud, Kubernetes, Terraform</td>
+                        <td>Avanzado</td>
+                    </tr>
+                    <tr>
+                        <td>Testing / QA</td>
+                        <td>Selenium, JMeter, Pruebas de Rendimiento</td>
+                        <td>Avanzado</td>
+                    </tr>
+                    <tr>
+                        <td>Idiomas</td>
+                        <td>Español (Nativo), Inglés (A2 - Elemental)</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <!-- PAGE 2 -->
+    <div class="page page-break">
+        <!-- EXPERIENCIA PROFESIONAL -->
+        <section class="section">
+            <h3 class="section-title">5. Experiencia Profesional</h3>
+
+            <div class="exp-formal">
+                <div class="exp-header-formal">
+                    <span class="exp-title-formal">ANALISTA DE SISTEMAS / CONSULTOR BID</span>
+                    <span class="exp-date-formal">Diciembre 2021 - Julio 2025</span>
+                </div>
+                <div class="exp-company-formal">CONTRALORÍA GENERAL DE LA REPÚBLICA DEL PERÚ</div>
+                <ul class="exp-desc-formal">
+                    <li>Arquitecto Principal del Sistema Integrado de Servicios de Control (SISCO), proyecto financiado
+                        por el BID con presupuesto superior a €5 millones.</li>
+                    <li>Liderazgo en análisis funcional y diseño de arquitectura para optimización de procesos de
+                        control gubernamental.</li>
+                    <li>Implementación de componentes del sistema eControl, logrando mejora de eficiencia operativa del
+                        30%.</li>
+                    <li>Gestión de stakeholders internacionales de alto nivel: BID, Ministerio de Economía, Alta
+                        Dirección.</li>
+                </ul>
+            </div>
+
+            <div class="exp-formal">
+                <div class="exp-header-formal">
+                    <span class="exp-title-formal">DIRECTOR DE PROYECTOS</span>
+                    <span class="exp-date-formal">Marzo 2018 - Noviembre 2021</span>
+                </div>
+                <div class="exp-company-formal">GARMENT TRADING S.A.C.</div>
+                <ul class="exp-desc-formal">
+                    <li>Liderazgo de proyectos de transformación digital en el sector textil-confecciones.</li>
+                    <li>Implementación de sistemas de control y trazabilidad para la cadena de suministro.</li>
+                    <li>Gestión de equipos multidisciplinarios en proyectos de desarrollo de software empresarial.</li>
+                </ul>
+            </div>
+
+            <div class="exp-formal">
+                <div class="exp-header-formal">
+                    <span class="exp-title-formal">ANALISTA PROGRAMADOR SENIOR</span>
+                    <span class="exp-date-formal">Julio 2017 - Diciembre 2017</span>
+                </div>
+                <div class="exp-company-formal">UNIVERSIDAD NACIONAL MAYOR DE SAN MARCOS - RECTORADO</div>
+                <ul class="exp-desc-formal">
+                    <li>Desarrollo del "Sistema de Gestión de Fincas" designado por Resolución Rectoral N° 04221-R-17.
+                    </li>
+                    <li>Análisis de requerimientos y desarrollo de módulos del sistema de administración universitaria.
+                    </li>
+                    <li>Colaboración directa con el Gerente de Proyecto y especialistas de desarrollo.</li>
+                </ul>
+            </div>
+
+            <div class="exp-formal">
+                <div class="exp-header-formal">
+                    <span class="exp-title-formal">JEFE DE SISTEMAS / DIRECTOR DE PROYECTOS</span>
+                    <span class="exp-date-formal">Febrero 2002 - Febrero 2018 (16 años)</span>
+                </div>
+                <div class="exp-company-formal">CORPORACIÓN TEXTIL SERVITEJO S.A.</div>
+                <ul class="exp-desc-formal">
+                    <li>Arquitecto Principal responsable de la concepción, diseño, implementación y evolución de un ERP
+                        propietario completo durante 16 años.</li>
+                    <li>Automatización del 100% de los procesos críticos (financiero, RRHH, manufactura).</li>
+                    <li>Reducción del 40% en tiempos de procesamiento de nómina y precisión de inventarios del 99.5%.
+                    </li>
+                    <li>Liderazgo de tres migraciones tecnológicas (VB → .NET Framework → .NET Core).</li>
+                    <li>Gestión de equipo técnico de 8 profesionales y más de 20 proyectos de innovación tecnológica.
+                    </li>
+                    <li>Capacitación a más de 100 usuarios en sistemas ERP.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- LOGROS CUANTIFICABLES -->
+        <section class="section">
+            <h3 class="section-title">6. Logros Cuantificables</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Indicador</th>
+                        <th>Valor</th>
+                        <th>Contexto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Presupuesto de Proyecto Liderado</td>
+                        <td>>€5,000,000</td>
+                        <td>Proyecto SISCO - Contraloría / BID</td>
+                    </tr>
+                    <tr>
+                        <td>Reducción de Tiempos de Proceso</td>
+                        <td>40%</td>
+                        <td>Automatización de nóminas y procesos productivos</td>
+                    </tr>
+                    <tr>
+                        <td>Precisión de Datos Críticos</td>
+                        <td>99.5% - 99.9%</td>
+                        <td>Control de inventarios y facturación</td>
+                    </tr>
+                    <tr>
+                        <td>Automatización de Procesos</td>
+                        <td>100%</td>
+                        <td>Procesos de negocio críticos</td>
+                    </tr>
+                    <tr>
+                        <td>Proyectos de Innovación Entregados</td>
+                        <td>+20</td>
+                        <td>100% de entregas dentro del presupuesto</td>
+                    </tr>
+                    <tr>
+                        <td>Experiencia en Liderazgo de Equipos</td>
+                        <td>+16 años</td>
+                        <td>Equipos técnicos multidisciplinarios</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- DECLARACIÓN JURADA -->
+        <div class="declaration">
+            <p>Declaro bajo juramento que la información proporcionada es veraz y puede ser verificada con la
+                documentación sustentatoria correspondiente.</p>
+            <br>
+            <p>Lima, Enero de 2026</p>
+            <br><br>
+            <p>_________________________________</p>
+            <p>Oscar Alfredo Valverde Suárez</p>
+            <p>DNI N° 40002484</p>
+        </div>
+    </div>
+</body>
+
+</html>
