@@ -1,0 +1,64 @@
+================================================================================
+                          CARTA DE PRESENTACIÓN
+================================================================================
+
+Estimado/a Responsable de Selección:
+
+Me dirijo a ustedes con gran interés en aportar mi trayectoria de más de 25 años 
+en el sector tecnológico. Me especializo como Enterprise Architect .NET en la 
+modernización de sistemas críticos y el desarrollo de arquitecturas corporativas 
+para instituciones altamente reguladas, especialmente a través de licitaciones 
+públicas.
+
++-----------------------------------------------------------------------------+
+|  ¿QUÉ PUEDO APORTAR?                                                        |
++-----------------------------------------------------------------------------+
+|                                                                             |
+|  > INGENIERÍA HOMOLOGADA + EXPERIENCIA PÚBLICA (MECES 3)                    |
+|    Título de Ingeniería Informática Homologado en España, respaldado por    |
+|    experiencia liderando proyectos del sector gubernamental y licitaciones  |
+|    con presupuestos superiores a 5M EUR (BID).                              |
+|                                                                             |
+|  > VISIÓN ENTERPRISE + EJECUCIÓN TÉCNICA (T-SQL / .NET)                     |
+|    Experto en diseñar arquitecturas complejas, refactorizar sistemas legacy |
+|    y mantener infraestructuras con bases de datos relacionales profundas    |
+|    exigiendo precisiones de procesamiento y disponibilidad del 99.9%.       |
+|                                                                             |
+|  > PIONERO EN AI-AUGMENTED DEVELOPMENT (Vibe Coding)                        |
+|    Orquesto la modernización de infraestructuras utilizando agentes nativos |
+|    de Inteligencia Artificial (Claude Code, Gemini CLI). Esto me permite    |
+|    acelerar los ciclos de entrega 10x y garantizar la eficiencia operativa  |
+|    de manera radicalmente productiva, sin perder jamás el control del rigor |
+|    arquitectónico y la seguridad del código.                                |
+|                                                                             |
+|  > DISPONIBILIDAD INMEDIATA (MADRID, ESPAÑA)                                |
+|    Ubicado en Madrid, con disponibilidad total para integración en          |
+|    formatos presenciales, híbridos o para coordinar proyectos a gran escala.|
+|                                                                             |
++-----------------------------------------------------------------------------+
+
+Mi perfil profesional trasciende la codificación tradicional: soy un Technical 
+Delivery Manager orientado a negocio, capaz de asegurar que sus sistemas legacy 
+entren al futuro reduciendo ciclos de proceso hasta un 40%. Mi reciente 
+finalización presencial del Máster en Big Data e Inteligencia Artificial (UCM) 
+garantiza además que las arquitecturas construidas estarán preparadas para el 
+consumo algorítmico y predictivo.
+
+Estoy convencido de que mi profunda veteranía tecnológica en entornos Microsoft, 
+fusionada con mi flujo de trabajo impulsado por IA, puede generar una ventaja 
+competitiva y financiera inmediata en su organización frente a futuras 
+licitaciones o modernizaciones críticas.
+
+Quedo a su entera disposición para discutir cómo puedo empujar el éxito de 
+sus próximos proyectos estratégicos en una entrevista personal.
+
+Atentamente,
+
+
+Oscar Alfredo Valverde Suárez
+Enterprise Architect .NET | Experto en AI-Augmented Development
+--------------------------------------------------------------------------------
+Email: ovasua@gmail.com
+Tel: +34 634 351 282 | +51 947 218 489
+LinkedIn: linkedin.com/in/ovasua
+--------------------------------------------------------------------------------
