@@ -31,9 +31,9 @@ públicas.
 |    de manera radicalmente productiva, sin perder jamás el control del rigor |
 |    arquitectónico y la seguridad del código.                                |
 |                                                                             |
-|  > DISPONIBILIDAD INMEDIATA (MADRID, ESPAÑA)                                |
-|    Ubicado en Madrid, con disponibilidad total para integración en          |
-|    formatos presenciales, híbridos o para coordinar proyectos a gran escala.|
+|  > UBICADO EN MADRID, ESPAÑA                                                |
+|    Actualmente en activo; incorporación con aproximadamente un mes de       |
+|    preaviso, en formatos presenciales, híbridos o remotos.                  |
 |                                                                             |
 +-----------------------------------------------------------------------------+
 
